@@ -263,7 +263,7 @@ section.dark  .time .time-colon .text{
                                
                                 <div class="col-8 text-left">
                                     <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                       Forgot Password?
+                                       
                                     </a>
                                 </div>
                                 <div class="col-4">
