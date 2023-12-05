@@ -14,280 +14,113 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
+
 <style>
-    /* Add this CSS code to your existing styles */
+  .gradient-custom-2 {
+/* fallback for old browsers */
+background: #fccb90;
 
-    /* Center the entire content vertically and horizontally */
-    .c-app {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-image: url('images/azvarietybackground.jpg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
-    }
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 
-    /* Center the logo within the row */
-    .row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        background-size: 30%;
-        background-repeat: no-repeat;
-        background-position: center;
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 
-        
-    }
-    
-
-/*@keyframes rotateImage {
-             0%{
-      transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg);
-    }
-    100%{
-      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-            }
-        } */
-        
-section{
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 20px;
-  margin-top: -400px;
-  
-  
-}
-section.dark{
-  background: #24292D;
-
-}
-section .container{
-  margin-top: 370px;
-  margin-left: 270px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 420px;
-  max-width: 45%;
-  width: 100%;
-  background: #fff;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 12px;
-  position: relative;
-}
-section.dark .container{
-  background: #323840;
-}
-section .container .icons i{
-  position: absolute;
-  right: 17px;
-  top: 17px;
-  height: 30px;
-  width: 30px;
-  background: #24292D;
-  color: #fff;
-  text-align: center;
-  line-height: 30px;
-  border-radius: 50%;
-  font-size: 14px;
-  cursor: pointer;
-}
-section.dark .container .icons i{
-  background: #fff;
-  color: #323840;
-}
-.container .icons i.fa-sun{
-  opacity: 0;
-  pointer-events: none;
-}
-section.dark .container .icons i.fa-sun{
-  opacity: 1;
-  pointer-events: auto;
-  font-size: 16px;
-}
-section .container .time{
-  margin-left: 1020px;
-  margin-top: -400px;
-  display: flex;
-  align-items: center;
-  
-}
-.container .time .time-colon{
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.time .time-colon .am_pm{
-  position: absolute;
-  top: 0;
-  right: -35px;
-  font-size: 15px;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-section.dark .time .time-colon .am_pm{
-  color: #fff;
-}
-.time .time-colon .time-text{
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background: #F0F8FF;
-  border-radius: 6px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-section.dark .time .time-colon .time-text{
-  background: #24292D;
-}
-.time .time-colon .time-text,
-.time .time-colon .colon{
-  font-size: 20px;
-  font-weight: 450;
-}
-section.dark .time .time-text .num,
-section.dark .time .colon{
-  color: #fff;
-}
-.time .time-colon .colon{
-  font-size: 40px;
-  margin: 0 10px;
-}
-.time .time-colon .time-text .text{
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-section.dark  .time .time-colon .text{
-  color: #fff;
+border-radius: 10px 25px;
 }
 
-</style>
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
 
+}
 
-<body class="c-app flex-row"> 
-<div class="container">
-    <div class="row mb-3">
-      <h3 style="margin-top: -185px; margin-left: 930px; text-shadow: 1px 1px violet; font-family: 'Times New Roman', serif;"> Philippine Time (PHT) </h4> 
-    <h4 class="date" style="margin-left: -190px; margin-top: -120px; text-shadow: 1px 1px violet; font-family: 'Times New Roman', serif;">
-      <span class="date_words"> January 1, 2023 </span> </h5>     
-    <section>
-    <div class="container">
-      <div class="icons">
-      
-     <!--   <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i> -->
-      </div>
-      <div class="time" style="text-shadow: 1px 1px violet; font-family: 'Times New Roman', serif;">
-        <div class="time-colon">
-          <div class="time-text">
-            <span class="num hour_num">08</span>
-            <span class="text">Hours</span>
-          </div>
-          <span class="colon">:</span>
-        </div>
-        <div class="time-colon">
-          <div class="time-text">
-            <span class="num min_num">45</span>
-            <span class="text">Minutes</span>
-          </div>
-          <span class="colon">:</span>
-        </div>
-        <div class="time-colon">
-          <div class="time-text">
-            <span class="num sec_num">06</span>
-            <span class="text">Seconds</span>
-          </div>
-          <span class="am_pm">AM</span>
-        </div>
-  </div> 
-    </div>
-  </section>
-      <!--  <h1> <span class="multiple-text text-muted" style="color: #0f001a; text-shadow: 2px 2px violet;"></span></h1> -->
-     <!--   <div class="col-12 d-flex justify-content-center">
-        </div> -->
-    </div>
-    <div class="row">
-        <div class="{{ Route::has('register') ? 'col-md-8' : 'col-md-5' }}">
-            @if(Session::has('account_deactivated'))
-                <div class="alert alert-danger" role="alert">
-                    {{ Session::get('account_deactivated') }}
+.form-outline {
+    display: flex;
+    align-items: center;
+}
+
+.form-outline .eye-icon {
+    width: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 2%; /* Position the image to the right within the password input field */
+    top: 50%; /* Center the image vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+}
+   </style>
+   <section class="h-100 gradient-form" style="background-color: #cbcefb">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black" style="border-radius: 35px;">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+                <div class="text-center">
+                    <img width="50" src="{{ asset('images/Logo.png') }}" alt="Logo"> 
+                  <h3 class="mt-3 mb-3 pb-1">Sign in</h3>
                 </div>
-            @endif
-            <div class="card-group" style="margin-top: -445px; margin-left: -65px;">
-                <div class="card p-4 border-10 shadow-xl" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); width: 1px; background: transparent;">
-                    <div class="card-body" style="background: transparent;">
-                        <form method="post" action="{{ url('/login') }}">
+
+                <form method="post" action="{{ url('/login') }}">
                             @csrf
-                            <img width="50" src="{{ asset('images/Logo.png') }}" alt="Logo" style="margin-left: 175px; margin-top: -55px; position: absolute; animation: rotateImage 5s linear infinite;">
-                            <h3 class="text-center" style=" text-shadow: 1px 1px violet; margin-top: 35px; font-family: 'Times New Roman', serif;">Point of Sale in AZ Variety Store</h3> 
-                            <h5 class="text-center" style=" text-shadow: 1px 1px violet; margin-top: 10px; font-family: 'Times New Roman', serif;">Sign in to your Account!</h5> 
-                            <p  style=" text-shadow: 1px 1px violet; margin-top: 30px; font-family: 'Times New Roman', serif;" >Email :</p>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="bi bi-person"></i>
-                                    </span>
-                                </div>
-                                <input type="email" class="form-control @error('email') is-invalid @enderror"
+                  <p>Please sign in to your account</p>
+
+                  <div class="form-outline mb-3">
+                  <input type="email" class="form-control @error('email') is-invalid @enderror"
                                        name="email" value="{{ old('email') }}"
                                        placeholder="example@gmail.com">
                                 @error('email')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                            </div>
-                            <p style=" text-shadow: 1px 1px violet; font-family: 'Times New Roman', serif;">Password :</p>
-                            <div class="input-group mb-4">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text">
-                                      <i class="bi bi-lock"></i>
-                                    </span>
-                                </div>
-                                <input type="password"
-                                       class="form-control @error('password') is-invalid @enderror"
-                                       placeholder="•••••••" name="password">
-                                @error('password')
+                   <!-- <label class="form-label" for="form2Example11">Username</label> -->
+                  </div>
+
+                  <div class="form-outline mb-4 position-relative">
+                              <input type="password" class="form-control @error('password') is-invalid @enderror"
+                                    placeholder="•••••••" name="password" id="password">
+                              <img src="{{ asset('images/eye-close.png') }}" id="eyeicon" class="eye-icon">
+                              @error('password')
                                 <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
-                            </div>
-                            <div class="row">
-                               
-                                <div class="col-8 text-left">
-                                    <a class="btn btn-link px-0" href="{{ route('password.request') }}">
-                                       Forgot Password?
-                                    </a>
-                                </div>
-                                <div class="col-4">
-                                    <button class="btn btn-primary px-4" type="submit">Sign in</button>
-                                </div> 
-                            </div>  
-                        </form>
-                    </div>
-                </div>
-                @if(Route::has('register'))
-                <div class="card text-white bg-primary py-5 d-md-down-none" style="width:45%">
-                    <div class="card-body text-center">
-                        <div>
-                            <h2>Sign up</h2>
-                            <p>Sign in to start your session</p>
-                            <a class="btn btn-lg btn-outline-light mt-3" href="{{ route('register') }}">Sign up</a>
-                        </div>
-                    </div>
-                </div>
-                @endif
+                   <!-- <label class="form-label" for="form2Example22">Password</label> -->
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block mb-3" type="submit" style="border-radius: 10px 35px;">Sign in</button>
+                    <a class="text-muted" href="{{ route('password.request') }}">Forgot password?</a>
+                  </div>
+
+                <!--  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <button type="button" class="btn btn-outline-danger">Create new</button>
+                  </div> -->
+
+                </form>
+
+              </div>
             </div>
+            <div class="col-lg-6 d-flex align-items-center bg-primary" style="background-image: url('{{ asset('images/azvariety.jpg') }}'); background-size: cover;">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+               <!-- <h4 class="mb-4">AZ Variety Store</h4>
+                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>
+</section>
 
 <!-- CoreUI -->
 <script src="{{ mix('js/app.js') }}" defer></script>
@@ -338,4 +171,118 @@ section.dark  .time .time-colon .text{
   }, 1000); // 1000 milliseconds = 1s
   </script>
 
+<script>
+    let eyeicon = document.getElementById("eyeicon");
+    let password = document.getElementById("password");
 
+    eyeicon.onclick = function () {
+        if (password.type == "password") {
+            password.type = "text";
+            eyeicon.src = "{{ asset('images/eye-open.png') }}";
+        } else {
+            password.type = "password";
+            eyeicon.src = "{{ asset('images/eye-close.png') }}";
+        }
+    }
+
+    // Check if the password input is empty or not
+    password.addEventListener("input", function () {
+        if (password.value.trim() === "") {
+            // Password is empty, hide the eye icon
+            eyeicon.style.display = "none";
+        } else {
+            // Password is not empty, show the eye icon
+            eyeicon.style.display = "block";
+        }
+    });
+</script>
+
+
+
+
+
+<!--
+<style>
+  .gradient-custom-2 {
+/* fallback for old browsers */
+background: #fccb90;
+
+/* Chrome 10-25, Safari 5.1-6 */
+background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+.gradient-form {
+height: 100vh !important;
+}
+}
+@media (min-width: 769px) {
+.gradient-custom-2 {
+border-top-right-radius: .3rem;
+border-bottom-right-radius: .3rem;
+}
+}
+   </style>
+   <section class="h-100 gradient-form" style="background-color: #eee;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/lotus.webp"
+                    style="width: 185px;" alt="logo">
+                  <h4 class="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+                </div>
+
+                <form>
+                  <p>Please login to your account</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example11" class="form-control"
+                      placeholder="Phone number or email address" />
+                    <label class="form-label" for="form2Example11">Username</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Password</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
+                      in</button>
+                    <a class="text-muted" href="#!">Forgot password?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">Don't have an account?</p>
+                    <button type="button" class="btn btn-outline-danger">Create new</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-white px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">We are more than just a company</h4>
+                <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+-->
